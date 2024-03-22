@@ -1,0 +1,36 @@
+{
+  "name": "sti/bvv-blades",
+  "version": "0.0.1",
+  "description": "Blade Component for BVV-Web-Apps",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Krompaß, Matthias (ADBV A)",
+      "email": "Matthias.Krompass@adbv-a.bayern.de"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Sti\\BvvBlades\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sti\\BvvBlades\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sti\\BvvBlades\\BvvBladesServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "orchestra/testbench": "^9.0",
+    "phpunit/phpunit": "^11.0"
+  }
+}
