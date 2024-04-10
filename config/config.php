@@ -1,71 +1,38 @@
 <?php
 
 return [
+
+    // Config-Eintrag, mit dem das Menü gebaut wird.
     'navigation' => [
-        [
-            'label' => 'Personen12',
-            'route' => 'people.index'
-        ],
-        [
-            'label' => 'Google',
-            'link' => 'https://www.google.de'
-            // 'route' => 'people.index'
-        ],
-        [
-            'label' => 'Personen-DD',
-            'route' => 'people.index',
-            'sub' => [
-                [
-                    'label' => 'Übersicht',
-                    'route' => 'people.index'
-                ],
-                [
-                    'label' => 'Google',
-                    'link' => 'https://www.google.de'
-                ],
-            ]
-        ]
+
+        // 1.1 Menüeintrag, der zu einer bestimmten Laravel-Route verweist
         // [
-        //     'label'  => 'Personen',
-        //     'link'   => route('people.index'),
-        //     'active' => (strpos(Route::currentRouteName(), 'people') === 0)
-        //         ? true
-        //         : false,
-        //     'sub'       => [
-        //         [
-        //             'label'  => 'Übersicht',
-        //             'link'   => route('people.index'),
-        //             'active' => (strpos(Route::currentRouteName(), 'people') === 0) ? true : false
-        //         ],
-        //         [
-        //             'label'  => 'Amtsbezeichnungen',
-        //             'link'   => route('amtsbezeichnungen.index'),
-        //             'active' => (strpos(Route::currentRouteName(), 'amtsbezeichnungen') === 0) ? true : false
-        //         ],
-        //     ]
+        //     'label' => 'Personen12',
+        //     'route' => 'people.index'
         // ],
+
+        // 1.2 Menüeintrag, der zu einer bestimmten URL verweist
         // [
-        //     'label'  => 'Dienststellen',
-        //     'active' => (strpos(Route::currentRouteName(), 'organisations') === 0)
-        //         ? true
-        //         : false,
-        //     'sub'       => [
+        //     'label' => 'Google',
+        //     'link' => 'https://www.google.de'
+        // ],
+
+        // 2 Dropdown, mit Unterpunkten
+        // der Sub-Eintrag ist genauso aufgebaut, wie bei 1.1 und 1.2
+        // [
+        //     'label' => 'Personen-DD',
+        //     'sub' => [
         //         [
-        //             'label'  => 'Übersicht',
-        //             'link'   => route('organisations.index'),
-        //             'active' => (strpos(Route::currentRouteName(), 'organisations') === 0) ? true : false
+        //             'label' => 'Übersicht',
+        //             'route' => 'people.index'
         //         ],
         //         [
-        //             'label'  => 'Gebäude',
-        //             'link'   => route('buildings.index'),
-        //             'active' => (strpos(Route::currentRouteName(), 'buildings') === 0) ? true : false
+        //             'label' => 'Google',
+        //             'link' => 'https://www.google.de'
         //         ],
-        //         [
-        //             'label'  => 'Organisationeinheiten',
-        //             'link'   => route('units.index'),
-        //             'active' => (strpos(Route::currentRouteName(), 'units') === 0) ? true : false
-        //         ]
         //     ]
         // ]
+
     ]
+    
 ];
