@@ -31,8 +31,8 @@
 
         @guest
             <div class="pt-2 flex items-center space-x-6">
-                <a
-                    class="block uppercase text-sti-blue font-bold border-b-2 border-white hover:border-sti-blue">Anmelden</a>
+                <a class="block uppercase text-sti-blue font-bold border-b-2 border-white hover:border-sti-blue"
+                    href="{{ route('login') }}">Anmelden</a>
             </div>
         @endguest
 
@@ -69,13 +69,47 @@
             </div>
             <div id="mega-menu" class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
                 <ul class="flex flex-col mt-4 text-xl md:flex-row md:mt-0">
+                    @foreach (Config::get('navigation') as $item)
+                        <li>
+                            @isset($item['sub'])
+                                <div>
+                                    <button id="nav-dropdown-button-1" data-dropdown-toggle="nav-dropdown-1"
+                                        class="flex items-center justify-between w-full p-4 border-b-4 border-sti-blue hover:border-white">
+                                        {{ $item['label'] }}
+                                        <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 1 4 4 4-4" />
+                                        </svg>
+                                    </button>
+                                    <div id="nav-dropdown-1"
+                                        class="relative z-10 hidden w-auto grid-cols-2 
+                                bg-sti-blue text-white">
+                                        <ul class="flex flex-wrap py-4 px-8 max-w-2xl"
+                                            aria-labelledby="nav-dropdown-button-1">
+                                            <li class="">
+                                                <a href="" class="block p-4 hover:underline">hallo</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="" class="block p-4 hover:underline">hallo</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            @endisset
+                            @isset($item['route'])
+                                <a class="block p-4 border-b-4 hover:border-white border-sti-blue"
+                                    href="{{ route($item['route']) }}">{{ $item['label'] }}</a>
+                            @endisset
+                        </li>
+                    @endforeach
                     <li>
                         <div>
                             <button id="nav-dropdown-button-1" data-dropdown-toggle="nav-dropdown-1"
                                 class="flex items-center justify-between w-full p-4 border-b-4 border-sti-blue hover:border-white">
                                 Drop-Down
-                                <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
-                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m1 1 4 4 4-4" />
                                 </svg>
@@ -83,8 +117,7 @@
                             <div id="nav-dropdown-1"
                                 class="relative z-10 hidden w-auto grid-cols-2 
                                 bg-sti-blue text-white">
-                                <ul class="flex flex-wrap py-4 px-8 max-w-2xl"
-                                    aria-labelledby="nav-dropdown-button-1">
+                                <ul class="flex flex-wrap py-4 px-8 max-w-2xl" aria-labelledby="nav-dropdown-button-1">
                                     <li class="">
                                         <a href="" class="block p-4 hover:underline">hallo</a>
                                     </li>

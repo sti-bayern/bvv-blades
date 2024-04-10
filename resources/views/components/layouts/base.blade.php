@@ -4,7 +4,7 @@
 
     <x-bvvblades::layouts.head />
 
-    <x-bvvblades::layouts.body>
+    <x-bvvblades::layouts.body :title="$title" :breadcrumb="$breadcrumb">
         {{ $slot }}
     </x-bvvblades::layouts.body>
 
