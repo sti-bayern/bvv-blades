@@ -3,7 +3,6 @@
 namespace Sti\BvvBlades;
 
 use Illuminate\Support\ServiceProvider;
-use Sti\BvvBlades\View\Components\Layouts\Base;
 use Sti\BvvBlades\View\Components\Alert;
 use Sti\BvvBlades\View\Components\LayoutBase;
 
@@ -12,6 +11,8 @@ class BvvBladesServiceProvider extends ServiceProvider
 
     public function register()
     {
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'bvvblades');
+
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'bvvblades');
     }
 
@@ -19,12 +20,16 @@ class BvvBladesServiceProvider extends ServiceProvider
     {
         $this->loadViewComponentsAs('bvvblades', [
             Alert::class,
-            Base::class,
             LayoutBase::class,
         ]);
         
 
         if ($this->app->runningInConsole()) {
+            // Publish config
+            $this->publishes([
+              __DIR__.'/../config/config.php' => config_path('bvvblades.php'),
+            ], 'config');
+        
             // Publish views
             $this->publishes([
                 __DIR__ . '/../resources/views' => resource_path('views/vendor/bvvblades'),
