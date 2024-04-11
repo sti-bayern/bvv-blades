@@ -5,20 +5,27 @@ return [
     // Config-Eintrag, mit dem das Menü gebaut wird.
     'navigation' => [
 
-        // 1.1 Menüeintrag, der zu einer bestimmten Laravel-Route verweist
+        /* ---------------------------
+            1.1 Menüeintrag, der zu einer bestimmten Laravel-Route verweist
+        ---------------------- */
         // [
         //     'label' => 'Personen12',
         //     'route' => 'people.index'
         // ],
 
-        // 1.2 Menüeintrag, der zu einer bestimmten URL verweist
+        /* ---------------------------
+            1.2 Menüeintrag, der zu einer bestimmten URL verweist
+        ---------------------- */
         // [
         //     'label' => 'Google',
         //     'link' => 'https://www.google.de'
         // ],
 
-        // 2 Dropdown, mit Unterpunkten
-        // der Sub-Eintrag ist genauso aufgebaut, wie bei 1.1 und 1.2
+        /* ---------------------------
+            2 Dropdown, mit Unterpunkten
+            der Sub-Eintrag ist genauso aufgebaut, wie bei 1.1 und 1.2
+            Der Dropdown-Eintrag ist nicht verlinkt und benötigt auch keinen Route- oder Link-Eintrag
+        ---------------------- */
         // [
         //     'label' => 'Personen-DD',
         //     'sub' => [
@@ -34,5 +41,5 @@ return [
         // ]
 
     ]
-    
+
 ];
