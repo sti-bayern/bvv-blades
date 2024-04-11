@@ -7,7 +7,7 @@
             <nav class="w-full rounded-md flex justify-start text-gray-800 space-x-4">
                 <span>Sie befinden sich hier: </span>
                 <ol class="list-reset flex space-x-2">
-                    @if (isset($breadcrumb['links']) || isset($breadcrumb['active']))
+                    @if (isset($breadcrumbs['links']) || isset($breadcrumbs['active']))
                         <li>
                             <a href="{{ route('home') }}" class="text-sti-blue">Startseite</a>
                         </li>
@@ -18,8 +18,8 @@
                             </span>
                         </li>
                     @endif
-                    @isset ($breadcrumb['links'])
-                        @foreach ($breadcrumb['links'] as $label => $link)
+                    @isset ($breadcrumbs['links'])
+                        @foreach ($breadcrumbs['links'] as $label => $link)
                             <li>
                                 <div class="flex items-center flex-nowrap space-x-2">
                                     <svg class="w-3 h-3 text-sti-blue" aria-hidden="true"
@@ -34,7 +34,7 @@
                             </li>
                         @endforeach
                     @endisset
-                    @isset ($breadcrumb['active'])
+                    @isset ($breadcrumbs['active'])
                         <li class="">
                             <div class="flex items-center flex-nowrap space-x-2">
                                 <svg class="w-3 h-3 text-sti-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +43,7 @@
                                         stroke-width="2" d="m1 9 4-4-4-4" />
                                 </svg>
                                 <span class="text-sti-blue font-bold">
-                                    {{ $breadcrumb['active'] }}
+                                    {{ $breadcrumbs['active'] }}
                                 </span>
                             </div>
                         </li>

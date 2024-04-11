@@ -6,20 +6,20 @@ use Illuminate\View\Component;
 
 class LayoutBase extends Component
 {
-    public $breadcrumb;
+    public $breadcrumbs;
     public $title;
 
     public function __construct(
-        $breadcrumb = [],
+        $breadcrumbs = [],
         $title = null
      ) {
         // dd('hallo');
         $this->title = $title;
-        $this->breadcrumb = $breadcrumb;
+        $this->breadcrumbs = $breadcrumbs;
     }
 
     public function render()
     {
-        return view('bvvblades::components.layouts.base', ['breadcrumb' => $this->breadcrumb]);
+        return view('bvvblades::components.layouts.base', ['breadcrumbs' => $this->breadcrumbs]);
     }
 }
