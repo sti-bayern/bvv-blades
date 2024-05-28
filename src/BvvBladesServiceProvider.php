@@ -2,6 +2,7 @@
 
 namespace Sti\BvvBlades;
 
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Sti\BvvBlades\View\Components\Alert;
 use Sti\BvvBlades\View\Components\LayoutBase;
@@ -22,6 +23,10 @@ class BvvBladesServiceProvider extends ServiceProvider
             Alert::class,
             LayoutBase::class,
         ]);
+
+        $this->loadTranslationsFrom(__DIR__.'/../lang', 'bvvblades');
+
+        Paginator::defaultView('bvvblades::paginator');
         
 
         if ($this->app->runningInConsole()) {
@@ -34,6 +39,7 @@ class BvvBladesServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__ . '/../resources/views' => resource_path('views/vendor/bvvblades'),
             ], 'views');
+        
         }
     }
 }
