@@ -5,6 +5,7 @@ namespace Sti\BvvBlades;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Sti\BvvBlades\View\Components\Alert;
+use Sti\BvvBlades\View\Components\Table;
 use Sti\BvvBlades\View\Components\LayoutBase;
 
 class BvvBladesServiceProvider extends ServiceProvider
@@ -22,7 +23,9 @@ class BvvBladesServiceProvider extends ServiceProvider
         $this->loadViewComponentsAs('bvvblades', [
             Alert::class,
             LayoutBase::class,
+            Table::class,
         ]);
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'bvvblades');
 
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'bvvblades');
 
