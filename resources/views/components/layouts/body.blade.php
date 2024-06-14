@@ -9,7 +9,7 @@
                 <ol class="list-reset flex space-x-2">
                     @if (isset($breadcrumbs['links']) || isset($breadcrumbs['active']))
                         <li>
-                            <a href="{{ route('home') }}" class="text-sti-blue">Startseite</a>
+                            <a href="{{ route('home') }}" class="text-sti-blue hover:underline">Startseite</a>
                         </li>
                     @else
                         <li>
@@ -27,7 +27,7 @@
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2" d="m1 9 4-4-4-4" />
                                     </svg>
-                                    <a href="{{ $link }}" class="text-sti-blue">
+                                    <a href="{{ $link }}" class="text-sti-blue hover:underline">
                                         {{ $label }}
                                     </a>
                                 </div>

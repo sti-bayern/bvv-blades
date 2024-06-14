@@ -44,19 +44,21 @@
                                         {{ $col['name'] }}
                                     @endif
                                 @elseif(is_array($col['buttons']))
-                                <div class="w-auto text-right pr-4 space-x-2">
-                                    @foreach ($col['buttons'] as $value)
-                                        @if ($value['type'] == 'link')
-                                            <a href="{{ $value['target'] }}" class="inline-block bg-sti-blue hover:ring-4 hover:ring-offset-1 hover:ring-gray-400 p-2 text-white transition ease-in-out duration-150">{{ $value['name'] }}</a>
-                                        @elseif ( in_array($value['type'], ['post', 'delete']) )
-                                            <form action="{{ $value['target'] }}" method="POST" class="inline-block">
-                                                @method($value['type'])
-                                                @csrf
-                                                <button type="submit" class="bg-sti-blue hover:ring-4 hover:ring-offset-1 hover:ring-gray-400 p-2 text-white transition ease-in-out duration-150">{{ $value['name'] }}</button>
-                                            </form>
-                                        @endif
-                                    @endforeach
-                                </div>
+                                    <div class="w-auto text-right pr-4 space-x-2">
+                                        @foreach ($col['buttons'] as $value)
+                                            @if ($value['type'] == 'link')
+                                                <x-bvvblades-forms-button
+                                                    :link="$value['target']">{{ $value['name'] }}</x-bvvblades-forms-button>
+                                            @elseif (in_array($value['type'], ['post', 'delete']))
+                                                <form action="{{ $value['target'] }}" method="POST" class="inline-block">
+                                                    @method($value['type'])
+                                                    @csrf
+                                                    <x-bvvblades-forms-button
+                                                        type="submit">{{ $value['name'] }}</x-bvvblades-forms-button>
+                                                </form>
+                                            @endif
+                                        @endforeach
+                                    </div>
                                 @endif
                             @else
                                 {{-- einfacher String-Wert --}}
