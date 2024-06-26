@@ -10,6 +10,7 @@ use Sti\BvvBlades\View\Components\FormsInput;
 use Sti\BvvBlades\View\Components\LayoutBase;
 use Sti\BvvBlades\View\Components\FormsButton;
 use Sti\BvvBlades\View\Components\FormsFieldset;
+use Sti\BvvBlades\View\Components\FormsForm;
 use Sti\BvvBlades\View\Components\FormsInputGroup;
 
 class BvvBladesServiceProvider extends ServiceProvider
@@ -28,6 +29,7 @@ class BvvBladesServiceProvider extends ServiceProvider
         $this->loadViewComponentsAs('bvvblades', [
             LayoutBase::class,
 
+            FormsForm::class,
             FormsFieldset::class,
             FormsButton::class,
             FormsInput::class,
