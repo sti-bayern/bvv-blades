@@ -23,8 +23,10 @@
                         E-Mail
                     </span>
                 </div>
-                <a class="block uppercase text-sti-blue font-bold border-b-2 border-white hover:border-sti-blue"
-                    data-te-dropdown-item-ref>Abmelden</a>
+                <x-bvvblades-forms-form method='post' :action="route('logout')" no_grid>
+                    <button class="block uppercase text-sti-blue font-bold border-b-2 border-white hover:border-sti-blue"
+                        data-te-dropdown-item-ref type="submit">Abmelden</button>
+                </x-bvvblades-forms-form>
 
             </div>
         @endauth
@@ -90,12 +92,9 @@
                                             aria-labelledby="nav-dropdown-button-{{ $key }}">
                                             @foreach ($item['sub'] as $sub)
                                                 <li class="">
-                                                    <a 
-                                                        @if (isset($sub['link']))
-                                                            href="{{ $sub['link'] }}"
+                                                    <a @if (isset($sub['link'])) href="{{ $sub['link'] }}"
                                                         @elseif (isset($sub['route']))
-                                                            href="{{ route($sub['route']) }}"
-                                                        @endif
+                                                            href="{{ route($sub['route']) }}" @endif
                                                         class="block p-4 hover:underline">{{ $sub['label'] }}</a>
                                                 </li>
                                             @endforeach

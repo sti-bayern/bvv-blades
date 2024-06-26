@@ -6,7 +6,12 @@ use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Sti\BvvBlades\View\Components\Alert;
 use Sti\BvvBlades\View\Components\Table;
+use Sti\BvvBlades\View\Components\FormsInput;
 use Sti\BvvBlades\View\Components\LayoutBase;
+use Sti\BvvBlades\View\Components\FormsButton;
+use Sti\BvvBlades\View\Components\FormsFieldset;
+use Sti\BvvBlades\View\Components\FormsForm;
+use Sti\BvvBlades\View\Components\FormsInputGroup;
 
 class BvvBladesServiceProvider extends ServiceProvider
 {
@@ -20,11 +25,21 @@ class BvvBladesServiceProvider extends ServiceProvider
 
     public function boot()
     {
+
         $this->loadViewComponentsAs('bvvblades', [
-            Alert::class,
             LayoutBase::class,
+
+            FormsForm::class,
+            FormsFieldset::class,
+            FormsButton::class,
+            FormsInput::class,
+            FormsInputGroup::class,
+
             Table::class,
+            
+            Alert::class,
         ]);
+
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'bvvblades');
 
         $this->loadTranslationsFrom(__DIR__.'/../lang', 'bvvblades');

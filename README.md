@@ -43,6 +43,8 @@ Dazu muß man diese zuerst aus dem Paket holen:
 
 Dieser Befehl fügt eine Config namens bvvblades.php hinzu.
 
+## Komponenten
+
 ### Navigation
 
 Die Navigation wird in der Config-Datei definiert. Eine entsprechende Beschreibung findet man in den Kommentaren.
@@ -68,6 +70,26 @@ Diese legt die Seitenüberschrift fest
 
 Damit wird die Brotkrumen-Zeile festgelegt 
 -->
+
+
+#### Formulare
+
+##### Fieldset
+
+    <x-bvvblades-forms-fieldset>
+        ....
+    </x-bvvblades-forms-fieldset>
+
+###### Attribute
+
+| Name   | Type    | mögliche Werte |                             |                                                |
+| ------ | ------- | -------------- | --------------------------- | ---------------------------------------------- |
+| type   | string  | default, blank | optional, Standard: default | Steuert Hintergrund und Border                 |
+| span   | integer | 2              | optional, Standard: 0       | gibt an, über wieviele Spalten der Kasten geht |
+| legend | string  |                | optional                    | definiert die Überschrift des Elements         |
+
+
+
 
 
 ## weiterführende Links
