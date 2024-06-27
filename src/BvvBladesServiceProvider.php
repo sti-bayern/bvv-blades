@@ -9,9 +9,12 @@ use Sti\BvvBlades\View\Components\Table;
 use Sti\BvvBlades\View\Components\FormsInput;
 use Sti\BvvBlades\View\Components\LayoutBase;
 use Sti\BvvBlades\View\Components\FormsButton;
+use Sti\BvvBlades\View\Components\FormsElements;
 use Sti\BvvBlades\View\Components\FormsFieldset;
 use Sti\BvvBlades\View\Components\FormsForm;
 use Sti\BvvBlades\View\Components\FormsInputGroup;
+use Sti\BvvBlades\View\Components\FormsSelect;
+use Sti\BvvBlades\View\Components\FormsSelectGroup;
 
 class BvvBladesServiceProvider extends ServiceProvider
 {
@@ -34,6 +37,9 @@ class BvvBladesServiceProvider extends ServiceProvider
             FormsButton::class,
             FormsInput::class,
             FormsInputGroup::class,
+            FormsSelect::class,
+            FormsSelectGroup::class,
+            FormsElements::class,
 
             Table::class,
             
