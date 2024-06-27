@@ -11,8 +11,7 @@ class FormsSelect extends Component
         public string $id,
         public string $name,
         public array $options,
-        public string $value = '',
-        public string $label = '',
+        public string $value = ''
      ) {
     }
 

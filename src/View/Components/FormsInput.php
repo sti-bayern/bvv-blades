@@ -6,17 +6,17 @@ use Illuminate\View\Component;
 
 class FormsInput extends Component
 {
+    private array $types = [
+        'text', 'date', 'hidden', 'email', 'number', 'password', 'url', 'tel'
+    ];
 
     public function __construct(
-        public string $id,
+        // $breadcrumbs = [],
         public string $name,
         public string $type = 'text',
-        public string $label = '',
         public string $placeholder = ''
      ) {
-        // dd($type);
-        // $this->name = $name;
-        // $this->breadcrumbs = $breadcrumbs;
+        if ( !in_array($type, $this->types) ) $this->type = 'text';
     }
 
     public function render()

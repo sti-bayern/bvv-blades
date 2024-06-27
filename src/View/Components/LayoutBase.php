@@ -6,16 +6,11 @@ use Illuminate\View\Component;
 
 class LayoutBase extends Component
 {
-    public $breadcrumbs;
-    public $title;
 
     public function __construct(
-        $breadcrumbs = [],
-        $title = null
+        public array $breadcrumbs = [],
+        public string $title = ''
      ) {
-        // dd('hallo');
-        $this->title = $title;
-        $this->breadcrumbs = $breadcrumbs;
     }
 
     public function render()

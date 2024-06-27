@@ -9,12 +9,7 @@ class FormsButton extends Component
 
     public function __construct(
         public string $link = '',
-        // $breadcrumbs = [],
-        // $title = null
      ) {
-        // dd('hallo');
-        // $this->title = $title;
-        // $this->breadcrumbs = $breadcrumbs;
     }
 
     public function render()
