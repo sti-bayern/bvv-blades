@@ -8,7 +8,7 @@ class FormsInput extends Component
 {
 
     public function __construct(
-        // $breadcrumbs = [],
+        public string $id,
         public string $name,
         public string $type = 'text',
         public string $label = '',

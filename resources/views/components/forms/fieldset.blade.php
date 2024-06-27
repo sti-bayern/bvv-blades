@@ -1,6 +1,6 @@
 <fieldset 
     {{ $attributes->class([
-        '', 
+        'flex', 
         'col-span-2' => $span == 2
     ]) }}>
     @if ($legend)
@@ -10,7 +10,7 @@
     @endif
     <div
         {{ $attributes->class([
-            'space-y-8 py-6 rounded-b-sm',
+            'space-y-8 py-6 rounded-b-sm w-full',
             'px-6 border border-gray-200 bg-gray-50' => $type != 'blank',
             'rounded-t-sm' => $legend == '',
         ]) }}>
