@@ -12,18 +12,6 @@
     - [Input](./documentation/forms/input.md)
     - [Select](./documentation/forms/select.md)
 
-
-
-## Komponenten
-
-
-
-##### Fieldset
-
-    <x-bvvblades-forms-fieldset>
-        ....
-    </x-bvvblades-forms-fieldset>
-
 ###### Attribute
 
 | Name   | Type    | mögliche Werte |                             |                                                |
