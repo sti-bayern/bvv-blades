@@ -6,8 +6,6 @@ use Illuminate\View\Component;
 
 class FormsInputGroup extends Component
 {
-    // public $name;
-
     public function __construct(
         public string $name,
         public string $type = 'text',

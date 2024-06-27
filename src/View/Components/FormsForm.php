@@ -19,7 +19,6 @@ class FormsForm extends Component
         public string $action,
         public string $method = 'post',
      ) {
-        // dd($is_grid);
         if ( !isset($this->methods[strtolower($method)]) ) $this->method = 'get';
         $this->form_method = $this->methods[strtolower($method)];
     }
