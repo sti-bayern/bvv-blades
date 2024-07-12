@@ -6,12 +6,12 @@
 
 ### Attribute
 
-| Name        | Type   | mögliche Werte                                        |          |                       |
-| ----------- | ------ | ----------------------------------------------------- | -------- | --------------------- |
-| id          | string |                                                       |          | id-Attribute          |
-| name        | string |                                                       |          | id-Attribute          |
-| type        | string | text, date, hidden, email, number, password, url, tel | optional | type-Attribute        |
-| placeholder | string |                                                       | optional | placeholder-Attribute |
+| Name        | Type   | mögliche Werte                                        |          |                                                  |
+| ----------- | ------ | ----------------------------------------------------- | -------- | ------------------------------------------------ |
+| id          | string |                                                       | optional | id-Attribute, falls leer wird der name verwendet |
+| name        | string |                                                       |          | name-Attribute                                   |
+| type        | string | text, date, hidden, email, number, password, url, tel | optional | type-Attribute                                   |
+| placeholder | string |                                                       | optional | placeholder-Attribute                            |
 
 ### Beispiel
 
@@ -38,13 +38,13 @@ Es können auch Input-Felder in Kompbination mit Beschriftung und ggf. Helfertex
 
 ### Attribute
 
-| Name        | Type   | mögliche Werte                                        |          |                           |
-| ----------- | ------ | ----------------------------------------------------- | -------- | ------------------------- |
-| id          | string |                                                       |          | id-Attribute              |
-| name        | string |                                                       |          | id-Attribute              |
-| type        | string | text, date, hidden, email, number, password, url, tel | optional | type-Attribute            |
-| placeholder | string |                                                       | optional | placeholder-Attribute     |
-| label       | string |                                                       |          | Inhalt des Label-Elements |
+| Name        | Type   | mögliche Werte                                        |          |                                                  |
+| ----------- | ------ | ----------------------------------------------------- | -------- | ------------------------------------------------ |
+| id          | string |                                                       | optional | id-Attribute, falls leer wird der name verwendet |
+| name        | string |                                                       |          | id-Attribute                                     |
+| type        | string | text, date, hidden, email, number, password, url, tel | optional | type-Attribute                                   |
+| placeholder | string |                                                       | optional | placeholder-Attribute                            |
+| label       | string |                                                       |          | Inhalt des Label-Elements                        |
 
 ### Slots
 

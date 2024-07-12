@@ -6,12 +6,12 @@
 
 ### Attribute
 
-| Name    | Type   | mögliche Werte |          |                                           |
-| ------- | ------ | -------------- | -------- | ----------------------------------------- |
-| id      | string |                |          | id-Attribute                              |
-| name    | string |                |          | id-Attribute                              |
-| options | array  |                |          | Array mit den Werten der option-Elementen |
-| value   | string |                | optional | ausgewählter Wert des Select-Feldes       |
+| Name    | Type   | mögliche Werte |          |                                                  |
+| ------- | ------ | -------------- | -------- | ------------------------------------------------ |
+| id      | string |                | optional | id-Attribute, falls leer wird der name verwendet |
+| name    | string |                |          | id-Attribute                                     |
+| options | array  |                |          | Array mit den Werten der option-Elementen        |
+| value   | string |                | optional | ausgewählter Wert des Select-Feldes              |
 
 #### options-Attribut
 
@@ -50,13 +50,13 @@ Es können auch Select-Felder in Kompbination mit Beschriftung und ggf. Helferte
 
 ### Attribute
 
-| Name    | Type   | mögliche Werte |          |                                           |
-| ------- | ------ | -------------- | -------- | ----------------------------------------- |
-| id      | string |                |          | id-Attribute                              |
-| name    | string |                |          | id-Attribute                              |
-| options | array  |                |          | Array mit den Werten der option-Elementen |
-| value   | string |                | optional | ausgewählter Wert des Select-Feldes       |
-| label   | string |                | optional | Inhalt des Label-Elements                 |
+| Name    | Type   | mögliche Werte |          |                                                  |
+| ------- | ------ | -------------- | -------- | ------------------------------------------------ |
+| id      | string |                | optional | id-Attribute, falls leer wird der name verwendet |
+| name    | string |                |          | id-Attribute                                     |
+| options | array  |                |          | Array mit den Werten der option-Elementen        |
+| value   | string |                | optional | ausgewählter Wert des Select-Feldes              |
+| label   | string |                | optional | Inhalt des Label-Elements                        |
 
 ### Slots
 
