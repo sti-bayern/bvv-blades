@@ -13,10 +13,12 @@ class FormsInput extends Component
     public function __construct(
         // $breadcrumbs = [],
         public string $name,
+        public string $id = '',
         public string $type = 'text',
         public string $placeholder = ''
      ) {
         if ( !in_array($type, $this->types) ) $this->type = 'text';
+        if ( $id == '' ) $this->id = $name;
     }
 
     public function render()

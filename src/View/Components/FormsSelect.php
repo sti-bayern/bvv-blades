@@ -8,11 +8,12 @@ class FormsSelect extends Component
 {
 
     public function __construct(
-        public string $id,
+        public string $id = '',
         public string $name,
         public array $options,
         public string $value = ''
      ) {
+        if ( $id == '' ) $this->id = $name;
     }
 
     public function render()
