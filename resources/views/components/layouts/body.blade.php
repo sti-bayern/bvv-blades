@@ -18,12 +18,12 @@
                             </span>
                         </li>
                     @endif
-                    @isset ($breadcrumbs['links'])
+                    @isset($breadcrumbs['links'])
                         @foreach ($breadcrumbs['links'] as $label => $link)
                             <li>
                                 <div class="flex items-center flex-nowrap space-x-2">
-                                    <svg class="w-3 h-3 text-sti-blue" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                    <svg class="w-3 h-3 text-sti-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        fill="none" viewBox="0 0 6 10">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2" d="m1 9 4-4-4-4" />
                                     </svg>
@@ -34,7 +34,7 @@
                             </li>
                         @endforeach
                     @endisset
-                    @isset ($breadcrumbs['active'])
+                    @isset($breadcrumbs['active'])
                         <li class="">
                             <div class="flex items-center flex-nowrap space-x-2">
                                 <svg class="w-3 h-3 text-sti-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -79,11 +79,7 @@
     </header>
 
     <main>
-    {{-- <section class="pb-8 pt-16"> --}}
-        {{-- <div class="max-w-5xl mx-auto"> --}}
-            {{ $slot }}
-        {{-- </div> --}}
-    {{-- </section> --}}
+        {{ $slot }}
     </main>
 
 
