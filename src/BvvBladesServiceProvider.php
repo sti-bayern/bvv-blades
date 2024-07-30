@@ -5,6 +5,7 @@ namespace Sti\BvvBlades;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 use Sti\BvvBlades\View\Components\Alert;
+use Sti\BvvBlades\View\Components\ComponentsBanner;
 use Sti\BvvBlades\View\Components\Table;
 use Sti\BvvBlades\View\Components\FormsInput;
 use Sti\BvvBlades\View\Components\LayoutBase;
@@ -15,6 +16,8 @@ use Sti\BvvBlades\View\Components\FormsForm;
 use Sti\BvvBlades\View\Components\FormsInputGroup;
 use Sti\BvvBlades\View\Components\FormsSelect;
 use Sti\BvvBlades\View\Components\FormsSelectGroup;
+use Sti\BvvBlades\View\Components\LayoutBanner;
+use Sti\BvvBlades\View\Components\LayoutContainer;
 
 class BvvBladesServiceProvider extends ServiceProvider
 {
@@ -31,6 +34,9 @@ class BvvBladesServiceProvider extends ServiceProvider
 
         $this->loadViewComponentsAs('bvvblades', [
             LayoutBase::class,
+            LayoutContainer::class,
+
+            ComponentsBanner::class,
 
             FormsForm::class,
             FormsFieldset::class,

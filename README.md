@@ -1,10 +1,14 @@
 # BVV-Blades
 
-## Inhalt 
+## Inhalt    
 - [Getting Started](./documentation/getting-started.md)
 - [Usage](./documentation/usage.md)
-- Komponenten
-  - [Seiten-Wrapper](./documentation/components-wrapper.md)
+- Dokumente
+  - Layout
+    - [Seiten-Wrapper](./documentation/layout/wrapper.md)
+    - [Container](./documentation/layout/container.md)
+  - Komponenten
+    - [Banner](./documentation/components/banner.md)
   - [Tabelle](./documentation/table.md)
   - [Formulare](./documentation/forms.md)
     - [Fieldset](./documentation/forms/fieldset.md)
