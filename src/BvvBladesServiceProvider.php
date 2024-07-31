@@ -18,6 +18,7 @@ use Sti\BvvBlades\View\Components\FormsTextarea;
 use Sti\BvvBlades\View\Components\LayoutContainer;
 use Sti\BvvBlades\View\Components\ComponentsBanner;
 use Sti\BvvBlades\View\Components\FormsCheckbox;
+use Sti\BvvBlades\View\Components\FormsRadio;
 
 class BvvBladesServiceProvider extends ServiceProvider
 {
@@ -47,6 +48,7 @@ class BvvBladesServiceProvider extends ServiceProvider
             FormsSelect::class,
             FormsTextarea::class,
             FormsCheckbox::class,
+            FormsRadio::class,
 
             Table::class,
             

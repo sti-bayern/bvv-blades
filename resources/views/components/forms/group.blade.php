@@ -1,4 +1,4 @@
-@if (in_array($element, ['input', 'select', 'textarea']))
+@if (in_array($element, ['input', 'select', 'textarea', 'radio']))
     <div>
         @if ($label)
             <label for="{{ $id }}"
@@ -12,6 +12,10 @@
 
             @case('select')
                 <x-bvvblades-forms-select :name="$name" :id="$id" :options="$options" :value="$value" />
+            @break
+
+            @case('radio')
+                <x-bvvblades-forms-radio :name="$name" :id="$id" :options="$options" :value="$value" />
             @break
 
             @case('textarea')
