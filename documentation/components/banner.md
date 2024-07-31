@@ -12,6 +12,6 @@ Das Bild wird so beschnitten, dass es in diesen Bereich passt
 | Name | Type   | mögliche Werte |        |                     |
 | ---- | ------ | -------------- | ------ | ------------------- |
 | src  | string |                | Pflich | URL zum Banner-Bild |
-
+| alt  | string |                | Optional | Beschreibung des Bildes |
 
 [zur Übersicht](../../README.md)

@@ -6,10 +6,13 @@ use Illuminate\View\Component;
 
 class ComponentsBanner extends Component
 {
+    public string $src;
+    public string $alt;
 
-    public function __construct(
-        public string $src
-     ) {
+    public function __construct(string $src, string $alt = '')
+    {
+        $this->src = $src;
+        $this->alt = $alt;
     }
 
     public function render()
