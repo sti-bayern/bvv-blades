@@ -20,7 +20,7 @@
 
             @case('textarea')
                 <x-bvvblades-forms-textarea :name="$name" :id="$id"
-                    :placeholder="$placeholder">{{ $value }}</x-bvvblades-forms-textarea>
+                    :placeholder="$placeholder">{{ $value ?? $slot }}</x-bvvblades-forms-textarea>
             @break
         @endswitch
         @if ($helper)

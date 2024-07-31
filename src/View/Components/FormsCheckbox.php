@@ -9,7 +9,7 @@ class FormsCheckbox extends Component
     public function __construct(
         public string $name,
         public string $id = '',
-        public string $value = ''
+        public string $value = '1'
      ) {
         if ( $id == '' ) $this->id = $name;
     }

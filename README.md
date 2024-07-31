@@ -1,5 +1,4 @@
 # BVV-Blades
-# schnapp 
 
 ## Inhalt    
 - [Getting Started](./documentation/getting-started.md)
@@ -13,9 +12,12 @@
   - [Tabelle](./documentation/table.md)
   - [Formulare](./documentation/forms.md)
     - [Fieldset](./documentation/forms/fieldset.md)
-    - [Button](./documentation/forms/button.md)
     - [Input](./documentation/forms/input.md)
     - [Select](./documentation/forms/select.md)
+    - [Textarea](./documentation/forms/textarea.md)
+    - [Checkbox](./documentation/forms/checkbox.md)
+    - [Radiobutton](./documentation/forms/radio.md)
+    - [Button](./documentation/forms/button.md)
 
 ## weiterführende Links
 
