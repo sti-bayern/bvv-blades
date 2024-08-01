@@ -1,8 +1,8 @@
-# Select
+# Radiobutton
 
 ## Einzel-Element
     
-    <x-bvvblades-forms-input id="<id>" name="<name>" options="<options>" value="<value>" />
+    <x-bvvblades-forms-radio id="<id>" name="<name>" options="<options>" value="<value>" />
 
 ### Attribute
 
@@ -23,7 +23,7 @@
 
 ### Beispiel
     
-    <x-bvvblades-forms-select 
+    <x-bvvblades-forms-radio 
         name="country" 
         id="country" 
         :options="[
@@ -35,10 +35,10 @@
 
 ## Select-Gruppe
 
-Es können auch Select-Felder in Kombination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
+Es können auch Radiobuttons in Kombination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
     
     <x-bvvblades-forms-group 
-        element="select"
+        element="radio"
         id="<id>" 
         name="<name>" 
         options="<options>" 
@@ -55,7 +55,7 @@ Es können auch Select-Felder in Kombination mit Beschriftung und ggf. Helfertex
 | ------- | ------ | -------------- | -------- | --------------------------------------------------------- |
 | name    | string |                |          | id-Attribute                                              |
 | options | array  |                |          | Array mit den Werten der option-Elementen                 |
-| element | string | select         |          | Legt fest, welche Form-Element-Gruppe erzeugt werden soll |
+| element | string | radio          |          | Legt fest, welche Form-Element-Gruppe erzeugt werden soll |
 | id      | string |                | optional | id-Attribute, falls leer wird der name verwendet          |
 | value   | string |                | optional | ausgewählter Wert des Select-Feldes                       |
 | label   | string |                | optional | Inhalt des Label-Elements                                 |
@@ -70,7 +70,7 @@ Es können auch Select-Felder in Kombination mit Beschriftung und ggf. Helfertex
 ### Beispiel
     
     <x-bvvblades-forms-group 
-        element="select"
+        element="radio"
         name="country" 
         id="country" 
         :options="[

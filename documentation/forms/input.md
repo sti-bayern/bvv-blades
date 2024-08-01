@@ -1,8 +1,8 @@
-# Input
+# Checkbox
 
 ## Einzel-Element
     
-    <x-bvvblades-forms-input name="<name>" id="<id>" type="<type>" placeholder="<placeholder>" />
+    <x-bvvblades-forms-checkbox name="<name>" id="<id>" />
 
 ### Attribute
 
@@ -23,9 +23,10 @@
 
 ## Input-Gruppe
 
-Es können auch Input-Felder in Kompbination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
+Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
     
-    <x-bvvblades-forms-input-group 
+    <x-bvvblades-forms-group 
+        element="input"
         id="<id>" 
         name="<name>" 
         type="<type>" 
@@ -34,17 +35,18 @@ Es können auch Input-Felder in Kompbination mit Beschriftung und ggf. Helfertex
     >
         <x-slot:helper>Helfer-Text</x-slot>
         <x-slot:error>Fehler-Text</x-slot>
-    </x-bvvblades-forms-input-group>
+    </x-bvvblades-forms-group>
 
 ### Attribute
 
-| Name        | Type   | mögliche Werte                                        |          |                                                  |
-| ----------- | ------ | ----------------------------------------------------- | -------- | ------------------------------------------------ |
-| id          | string |                                                       | optional | id-Attribute, falls leer wird der name verwendet |
-| name        | string |                                                       |          | id-Attribute                                     |
-| type        | string | text, date, hidden, email, number, password, url, tel | optional | type-Attribute                                   |
-| placeholder | string |                                                       | optional | placeholder-Attribute                            |
-| label       | string |                                                       |          | Inhalt des Label-Elements                        |
+| Name        | Type   | mögliche Werte                                        |          |                                                           |
+| ----------- | ------ | ----------------------------------------------------- | -------- | --------------------------------------------------------- |
+| name        | string |                                                       |          | id-Attribute                                              |
+| label       | string |                                                       |          | Inhalt des Label-Elements                                 |
+| element     | string | input                                                 |          | Legt fest, welche Form-Element-Gruppe erzeugt werden soll |
+| id          | string |                                                       | optional | id-Attribute, falls leer wird der name verwendet          |
+| type        | string | text, date, hidden, email, number, password, url, tel | optional | type-Attribute                                            |
+| placeholder | string |                                                       | optional | placeholder-Attribute                                     |
 
 ### Slots
 
@@ -55,7 +57,8 @@ Es können auch Input-Felder in Kompbination mit Beschriftung und ggf. Helfertex
 
 ### Beispiel
 
-    <x-bvvblades-forms-input-group 
+    <x-bvvblades-forms-group 
+        element="input"
         id="vorname" 
         name="vorname" 
         label="Vorname der Person"
@@ -67,7 +70,7 @@ Es können auch Input-Felder in Kompbination mit Beschriftung und ggf. Helfertex
         @error('vorname')
             <x-slot:error>{{ $message }}</x-slot>
         @enderror
-    </x-bvvblades-forms-input-group>
+    </x-bvvblades-forms-group>
 
 
 [zur Übersicht](../../README.md)
