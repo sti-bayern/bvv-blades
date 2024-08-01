@@ -18,6 +18,8 @@ use Sti\BvvBlades\View\Components\FormsSelect;
 use Sti\BvvBlades\View\Components\FormsSelectGroup;
 use Sti\BvvBlades\View\Components\LayoutBanner;
 use Sti\BvvBlades\View\Components\LayoutContainer;
+use Sti\BvvBlades\View\Components\Accordion;
+use Sti\BvvBlades\View\Components\AccordionItem;
 
 class BvvBladesServiceProvider extends ServiceProvider
 {
@@ -50,6 +52,8 @@ class BvvBladesServiceProvider extends ServiceProvider
             Table::class,
             
             Alert::class,
+            Accordion::class,
+            AccordionItem::class,
         ]);
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'bvvblades');
