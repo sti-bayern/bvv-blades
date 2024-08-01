@@ -7,6 +7,11 @@ use Illuminate\Support\ServiceProvider;
 use Sti\BvvBlades\View\Components\Alert;
 use Sti\BvvBlades\View\Components\Table;
 use Sti\BvvBlades\View\Components\FormsForm;
+use Sti\BvvBlades\View\Components\ComponentsBanner;
+use Sti\BvvBlades\View\Components\FormsCheckbox;
+
+use Sti\BvvBlades\View\Components\FormsRadio;
+
 use Sti\BvvBlades\View\Components\FormsGroup;
 use Sti\BvvBlades\View\Components\FormsInput;
 use Sti\BvvBlades\View\Components\LayoutBase;
