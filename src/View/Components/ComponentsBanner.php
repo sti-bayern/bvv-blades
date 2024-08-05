@@ -6,13 +6,15 @@ use Illuminate\View\Component;
 
 class ComponentsBanner extends Component
 {
-    public string $src;
-    public string $alt;
+    protected array $sizes = ['s', 'm', 'l'];
 
-    public function __construct(string $src, string $alt = '')
+    public function __construct(
+        public string $src, 
+        public string $alt = '', 
+        public string $size = 'm'
+    )
     {
-        $this->src = $src;
-        $this->alt = $alt;
+        $this->size = in_array($size, $this->sizes) ? $size : 'm';
     }
 
     public function render()
