@@ -1,4 +1,4 @@
-# BVV-Blades 
+# BVV-Blades
 
 ## Inhalt    
 - [Getting Started](./documentation/getting-started.md)
