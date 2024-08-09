@@ -9,6 +9,7 @@
     - [Container](./documentation/layout/container.md)
   - Komponenten
     - [Banner](./documentation/components/banner.md)
+    - [Accordion](./documentation/components/accordion.md)
   - [Tabelle](./documentation/table.md)
   - [Formulare](./documentation/forms.md)
     - [Fieldset](./documentation/forms/fieldset.md)
