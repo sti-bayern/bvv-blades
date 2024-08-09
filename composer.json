@@ -1,6 +1,6 @@
 {
   "name": "sti-bayern/bvv-blades",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Blade Component for BVV-Web-Apps",
   "type": "library",
   "license": "MIT",
