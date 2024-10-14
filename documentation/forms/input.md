@@ -2,7 +2,7 @@
 
 ## Einzel-Element
     
-    <x-bvvblades-forms-checkbox name="<name>" id="<id>" />
+    <x-bvvblades-forms-input name="<name>" id="<id>" />
 
 ### Attribute
 

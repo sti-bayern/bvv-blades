@@ -38,7 +38,7 @@
     <div class="flex">
         <div class="flex items-center h-5">
             <x-bvvblades-forms-input :name="$name" :id="$id" type="hidden" value="0" />
-            <x-bvvblades-forms-checkbox :name="$name" :id="$id" :value="$value" />
+            <x-bvvblades-forms-checkbox :name="$name" :id="$id" :value="$value" :checked="$checked" />
         </div>
         <div class="ms-2 text-sm">
             <label for="{{ $id }}" class="text-sm font-bold text-gray-800 hover:cursor-pointer">{{ $label == '' ? $name : $label }}</label>
