@@ -35,13 +35,13 @@
         @endif
     </div>
 @elseif (in_array($element, ['checkbox']))
-    <div class="flex">
+    <div class="flex items-center">
         <div class="flex items-center h-5">
-            <x-bvvblades-forms-input :name="$name" :id="$id" type="hidden" value="0" />
+            <x-bvvblades-forms-input :name="$name" type="hidden" value="0" />
             <x-bvvblades-forms-checkbox :name="$name" :id="$id" :value="$value" :checked="$checked" />
         </div>
-        <div class="ms-2 text-sm">
-            <label for="{{ $id }}" class="text-sm font-bold text-gray-800 hover:cursor-pointer">{{ $label == '' ? $name : $label }}</label>
+        <div class="ms-2">
+            <label for="{{ $id }}" class="text-gray-800 hover:cursor-pointer">{{ $label == '' ? $name : $label }}</label>
             @if ($helper)
                 <p id="helper-{{ $id }}" class="mt-2 text-sm text-gray-500 dark:text-gray-400">
                     {{ $helper }}

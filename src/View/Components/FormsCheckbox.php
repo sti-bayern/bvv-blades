@@ -10,8 +10,11 @@ class FormsCheckbox extends Component
         public string $name,
         public string $id = '',
         public string $value = '1',
-        public bool $checked = false
+        public bool|null $checked = null
      ) {
+        if ( !isset($checked) ) {
+            $this->checked = (old($name, $value) == 1) ? true : false;
+        }
         if ( $id == '' ) $this->id = $name;
     }
 
