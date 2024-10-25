@@ -1,4 +1,4 @@
-@if (in_array($element, ['input', 'select', 'textarea', 'radio']))
+@if (in_array($element, ['input', 'select', 'textarea', 'radio', 'upload']))
     <div>
         @if ($label)
             <label for="{{ $id }}"
@@ -38,7 +38,7 @@
     <div class="flex items-center">
         <div class="flex items-center h-5">
             <x-bvvblades-forms-input :name="$name" type="hidden" value="0" />
-            <x-bvvblades-forms-checkbox :name="$name" :id="$id" :value="$value" :checked="$checked" />
+            <x-bvvblades-forms-checkbox :name="$name" :id="$id" value="1" :checked="$checked" />
         </div>
         <div class="ms-2">
             <label for="{{ $id }}" class="text-gray-800 hover:cursor-pointer">{{ $label == '' ? $name : $label }}</label>
