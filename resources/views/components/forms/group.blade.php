@@ -22,6 +22,10 @@
                 <x-bvvblades-forms-textarea :name="$name" :id="$id"
                     :placeholder="$placeholder">{{ $value ?? $slot }}</x-bvvblades-forms-textarea>
             @break
+
+            @case('upload')
+                <x-bvvblades-forms-upload :name="$name" :id="$id" />
+            @break
         @endswitch
         @if ($helper)
             <p id="helper-{{ $id }}" class="mt-2 text-sm text-gray-500 dark:text-gray-400">

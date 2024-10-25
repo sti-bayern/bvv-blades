@@ -15,6 +15,7 @@
   - [Formulare](./documentation/forms.md)
     - [Fieldset](./documentation/forms/fieldset.md)
     - [Input](./documentation/forms/input.md)
+    - [Upload](./documentation/forms/upload.md)
     - [Select](./documentation/forms/select.md)
     - [Textarea](./documentation/forms/textarea.md)
     - [Checkbox](./documentation/forms/checkbox.md)
