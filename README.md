@@ -7,6 +7,7 @@
   - Layout
     - [Seiten-Wrapper](./documentation/layout/wrapper.md)
     - [Container](./documentation/layout/container.md)
+    - [Brotkrumen](./documentation/layout/breadcrumbs.md)
   - Komponenten
     - [Banner](./documentation/components/banner.md)
     - [Accordion](./documentation/components/accordion.md)
