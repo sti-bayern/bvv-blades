@@ -8,6 +8,10 @@
         {
             "name": "Krompaß, Matthias (ADBV A)",
             "email": "Matthias.Krompass@adbv-a.bayern.de"
+        },
+        {
+            "name": "Sadebeck, Samantha (ADBV A)",
+            "email": "Samantha.Sadebeck@adbv-a.bayern.de"
         }
     ],
     "minimum-stability": "dev",
