@@ -15,11 +15,11 @@ Der Titel ist dabei standardmäßig eine h3-Überschrift, s. Attribute
 
 ## Attribute
 
-| Name  | Type    | mögliche Werte      |          | Beschreibung                              |
-| ----- | ------- | ------------------- | -------- | ----------------------------------------- |
-| title | string  |                     | Pflicht  | Titel des Akkordeons                      |
-| level | integer | 2, 3, 4             | optional | Überschriften-Level des Titels            |
-| align | string  | left, center, right | optional | Ausrichtung des Titels (Standard: center) |
+| Name  | Type    | mögliche Werte      |          | Beschreibung                                 |
+| ----- | ------- | ------------------- | -------- | -------------------------------------------- |
+| title | string  |                     | Pflicht  | Titel des Akkordeons                         |
+| level | integer | 2, 3, 4             | optional | Überschriften-Level des Titels (Standard: 3) |
+| align | string  | left, center, right | optional | Ausrichtung des Titels (Standard: center)    |
 
 
 [zur Übersicht](../../README.md)
