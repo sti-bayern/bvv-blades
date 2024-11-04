@@ -1,6 +1,6 @@
 <div class="relative overflow-x-auto">
     <table class="w-full text-left rtl:text-right">
-        {{-- 
+        {{--
             Die Kopf-Zeile wird aus dem Attribut $heads befüllt.
             Dieses muss aus einem eindimensionalen Array mit String-Werten bestehen,
             z.B. ['test1', 'test2']
@@ -12,10 +12,10 @@
                         {{ $head }}
                     </x-bvvblades::tables.th>
                 @endforeach
-                </x-bvvblades::tables.th>
+            </x-bvvblades::tables.thead>
         @endif
 
-        {{-- 
+        {{--
             Die einzelnen Reihen werden aus dem Attribut $rows (array) befüllt.
             Die Attribute des Array können String-Werte sein.
             Um mehrer Informationen mitzugeben kann das Attribut wiederum ein Array sein.

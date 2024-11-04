@@ -7,6 +7,7 @@
   - Layout
     - [Seiten-Wrapper](./documentation/layout/wrapper.md)
     - [Container](./documentation/layout/container.md)
+    - [Brotkrumen](./documentation/layout/breadcrumbs.md)
   - Komponenten
     - [Banner](./documentation/components/banner.md)
     - [Accordion](./documentation/components/accordion.md)
@@ -14,6 +15,7 @@
   - [Formulare](./documentation/forms.md)
     - [Fieldset](./documentation/forms/fieldset.md)
     - [Input](./documentation/forms/input.md)
+    - [Upload](./documentation/forms/upload.md)
     - [Select](./documentation/forms/select.md)
     - [Textarea](./documentation/forms/textarea.md)
     - [Checkbox](./documentation/forms/checkbox.md)

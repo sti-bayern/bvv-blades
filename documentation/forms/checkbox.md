@@ -6,11 +6,12 @@
 
 ### Attribute
 
-| Name  | Type   | mögliche Werte |          |                                                  |
-| ----- | ------ | -------------- | -------- | ------------------------------------------------ |
-| name  | string |                |          | name-Attribute                                   |
-| id    | string |                | optional | id-Attribute, falls leer wird der name verwendet |
-| value | string |                | optional | Value-Attribut der Checkbox, default: 1          |
+| Name    | Type   | mögliche Werte |          |                                                           |
+| ------- | ------ | -------------- | -------- | --------------------------------------------------------- |
+| name    | string |                |          | name-Attribute                                            |
+| id      | string |                | optional | id-Attribute, falls leer wird der name verwendet          |
+| value   | string |                | optional | Value-Attribut der Checkbox, default: 1                   |
+| checked | bool   |                | optional | Kriterium, ob die Checkbox angekreutz ist, default: false |
 
 ### Beispiel
 
@@ -39,6 +40,7 @@ Es können auch Checkbox-Felder in Kombination mit Beschriftung und ggf. Helfert
 | element | string | checkbox       |          | Legt fest, welche Form-Element-Gruppe erzeugt werden soll |
 | id      | string |                | optional | id-Attribute, falls leer wird der name verwendet          |
 | label   | string |                | optional | Inhalt des Label-Elements                                 |
+| checked | bool   |                | optional | Kriterium, ob die Checkbox angekreutz ist, default: false |
 
 ### Slots
 

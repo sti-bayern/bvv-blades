@@ -21,12 +21,16 @@ class FormsGroup extends Component
         public array $options = [],
         // input
         public string $type = 'text',
+        // checkbox
+        public bool $checked = false,
      ) {
+        // dd($checked);
         if ( $id == '' ) $this->id = $name;
     }
 
     public function render()
     {
+
         return view('bvvblades::components.forms.group');
     }
 }
