@@ -3,7 +3,7 @@
         {{ $attributes->merge([
             'type' => 'button',
             'class' =>
-                'bg-sti-blue round-sm hover:ring-4 hover:ring-offset-1 hover:ring-gray-400 p-2 text-white transition ease-in-out duration-150',
+                'bg-sti-blue-700 round-sm hover:ring-4 hover:ring-offset-1 hover:ring-gray-400 p-2 text-white transition ease-in-out duration-150',
         ]) }}>
 
         @if ($slot->isEmpty())
@@ -17,7 +17,7 @@
     <a href="{{ $link }}"
         {{ $attributes->merge([
             'class' =>
-                'inline-block bg-sti-blue cursor-pointer hover:ring-4 hover:ring-offset-1 hover:ring-gray-400 p-2 text-white transition ease-in-out duration-150',
+                'inline-block bg-sti-blue-700 cursor-pointer hover:ring-4 hover:ring-offset-1 hover:ring-gray-400 p-2 text-white transition ease-in-out duration-150',
         ]) }}>
         @if ($slot->isEmpty())
             Abschicken

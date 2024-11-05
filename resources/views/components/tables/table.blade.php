@@ -37,7 +37,7 @@
                                     @if ($col['link'])
                                         {{-- link-Atrribut gesetzt -> verlinkter Tag --}}
                                         <a href="{{ $col['link'] }}"
-                                            class="text-sti-blue border-b border-white hover:border-sti-blue">
+                                            class="text-sti-blue-700 border-b border-white hover:border-sti-blue">
                                             {{ $col['name'] }}
                                         </a>
                                     @else
