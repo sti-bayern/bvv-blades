@@ -1,6 +1,6 @@
 {
     "name": "sti-bayern/bvv-blades",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "description": "Blade Component for BVV-Web-Apps",
     "type": "library",
     "license": "MIT",
@@ -8,6 +8,10 @@
         {
             "name": "Krompaß, Matthias (ADBV A)",
             "email": "Matthias.Krompass@adbv-a.bayern.de"
+        },
+        {
+            "name": "Sadebeck, Samantha (ADBV A)",
+            "email": "Samantha.Sadebeck@adbv-a.bayern.de"
         }
     ],
     "minimum-stability": "dev",

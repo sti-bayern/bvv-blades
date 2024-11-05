@@ -1,0 +1,5 @@
+@import 'tailwind/base.css';
+@import 'tailwind/components.css';
+@import 'tailwind/utilities.css';
+@import 'tailwind/variants.css';
+@import '../../vendor/sti-bayern/bvv-blades/dist/assets/css/app.css';

@@ -21,6 +21,7 @@
     - [Checkbox](./documentation/forms/checkbox.md)
     - [Radiobutton](./documentation/forms/radio.md)
     - [Button](./documentation/forms/button.md)
+- [Entwicklungs-Hinweise](./documentation/development.md)
 
 ## weiterführende Links
 
