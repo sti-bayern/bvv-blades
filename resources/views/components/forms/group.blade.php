@@ -41,7 +41,7 @@
 @elseif (in_array($element, ['checkbox']))
     <div class="flex items-center">
         <div class="flex items-center h-5">
-            <x-bvvblades-forms-input :name="$name" type="hidden" value="0" />
+            <x-bvvblades-forms-input :name="$name" id="default_{{ $id }}" type="hidden" value="0" />
             <x-bvvblades-forms-checkbox :name="$name" :id="$id" value="1" :checked="$checked" />
         </div>
         <div class="ms-2">

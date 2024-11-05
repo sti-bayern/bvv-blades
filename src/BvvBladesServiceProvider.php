@@ -28,7 +28,7 @@ class BvvBladesServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'bvvblades');
+        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'bvvblades');
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'bvvblades');
     }
@@ -61,9 +61,9 @@ class BvvBladesServiceProvider extends ServiceProvider
             AccordionItem::class,
         ]);
 
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'bvvblades');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'bvvblades');
 
-        $this->loadTranslationsFrom(__DIR__.'/../lang', 'bvvblades');
+        $this->loadTranslationsFrom(__DIR__ . '/../lang', 'bvvblades');
 
         Paginator::defaultView('bvvblades::paginator');
 
@@ -71,7 +71,7 @@ class BvvBladesServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             // Publish config
             $this->publishes([
-              __DIR__.'/../config/config.php' => config_path('bvvblades.php'),
+                __DIR__ . '/../config/config.php' => config_path('bvvblades.php'),
             ], 'config');
 
             // Publish views
@@ -79,6 +79,16 @@ class BvvBladesServiceProvider extends ServiceProvider
                 __DIR__ . '/../resources/views' => resource_path('views/vendor/bvvblades'),
             ], 'views');
 
+            // Publish assets
+            $this->publishes([
+                __DIR__ . '/../templates/css' => resource_path('css'),
+                __DIR__ . '/../templates/js' => resource_path('js'),
+            ], 'assets');
+
+            // Publish assets
+            $this->publishes([
+                __DIR__ . '/../templates/tailwind.config.js' => base_path('tailwind.config.js'),
+            ], 'tailwind');
         }
     }
 }

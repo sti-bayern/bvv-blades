@@ -1,0 +1,15 @@
+.accordion-group {
+    @apply my-4;
+}
+.accordion-group details summary {
+    @apply border-b-0 rounded-none;
+}
+.accordion-group details > div {
+    @apply border-b-0;
+}
+.accordion-group details:last-child summary {
+    @apply border-b;
+}
+.accordion-group details:last-child > div {
+    @apply border-b;
+}
