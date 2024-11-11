@@ -2,18 +2,18 @@
 
     <x-bvvblades::layouts.navigation />
 
-    <header class="bg-sti-blue-light">
+    <header class=" bg-sti-blue-50">
         <section class="max-w-5xl mx-auto py-2">
             <nav class="w-full rounded-md flex justify-start text-gray-800 space-x-4">
                 <span>Sie befinden sich hier: </span>
                 <ol class="list-reset flex space-x-2">
                     @if (isset($breadcrumbs['links']) || isset($breadcrumbs['active']))
                         <li>
-                            <a href="{{ route('home') }}" class="text-sti-blue hover:underline">Startseite</a>
+                            <a href="{{ route('home') }}" class="text-sti-blue-700 hover:underline">Startseite</a>
                         </li>
                     @else
                         <li>
-                            <span class="text-sti-blue font-bold">
+                            <span class="text-sti-blue-700 font-bold">
                                 Startseite
                             </span>
                         </li>
@@ -27,7 +27,7 @@
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2" d="m1 9 4-4-4-4" />
                                     </svg>
-                                    <a href="{{ $link }}" class="text-sti-blue hover:underline">
+                                    <a href="{{ $link }}" class="text-sti-blue-700 hover:underline">
                                         {{ $label }}
                                     </a>
                                 </div>
@@ -42,13 +42,13 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m1 9 4-4-4-4" />
                                 </svg>
-                                <span class="text-sti-blue font-bold">
+                                <span class="text-sti-blue-700 font-bold">
                                     {{ $breadcrumbs['active'] }}
                                 </span>
                             </div>
                         </li>
                     @endisset
-                    {{-- 
+                    {{--
                     <li class="" v-if="active">
                         <div class="flex items-center flex-nowrap space-x-2">
                             <svg class="w-3 h-3 text-sti-blue" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 9 4-4-4-4" />
                             </svg>
-                            <span class="text-sti-blue font-bold">
+                            <span class="text-sti-blue-700 font-bold">
                                 {{ active }}
                             </span>
                         </div>
@@ -66,7 +66,7 @@
         </section>
 
         <div class="max-w-5xl mx-auto pt-12 pb-8">
-            <h1 class="font-semibold text-4xl text-sti-blue leading-tight">
+            <h1 class="font-semibold text-4xl text-sti-blue-700 leading-tight">
                 @isset($title)
                     {{ $title }}
                 @endisset

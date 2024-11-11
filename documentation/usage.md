@@ -1,5 +1,14 @@
 # Usage
 
+## Starten der Umgebung
+
+Zum Starten der Umgebung gibt es ein Hilfsskript im bin-Ordner:
+
+    # erzeugen der localen Images
+    bin/localDeploy -e local build
+    # starten der lokalen Umgebung
+    bin/localDeploy -e local start
+
 ## Config-Datei
 
 In einer zentralen BvvBlades-Config-Datei werden alle relevanten Variablen gesetzt.

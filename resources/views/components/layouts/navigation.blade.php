@@ -24,7 +24,7 @@
                     </span>
                 </div>
                 <x-bvvblades-forms-form method='post' :action="route('logout')" no_grid>
-                    <button class="block uppercase text-sti-blue font-bold border-b-2 border-white hover:border-sti-blue"
+                    <button class="block uppercase text-sti-blue-700 font-bold border-b-2 border-white hover:border-sti-blue"
                         data-te-dropdown-item-ref type="submit">Abmelden</button>
                 </x-bvvblades-forms-form>
 
@@ -33,7 +33,7 @@
 
         @guest
             <div class="pt-2 flex items-center space-x-6">
-                <a class="block uppercase text-sti-blue font-bold border-b-2 border-white hover:border-sti-blue"
+                <a class="block uppercase text-sti-blue-700 font-bold border-b-2 border-white hover:border-sti-blue"
                     href="{{ route('login') }}">Anmelden</a>
             </div>
         @endguest
@@ -53,7 +53,7 @@
         </a>
     </section>
 </div>
-<div class="bg-sti-blue text-white">
+<div class="bg-sti-blue-700 text-white">
 
     <nav class="max-w-5xl mx-auto text-white">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto">
@@ -77,7 +77,7 @@
                                 <div>
                                     <button id="nav-dropdown-button-{{ $key }}"
                                         data-dropdown-toggle="nav-dropdown-{{ $key }}"
-                                        class="flex items-center justify-between w-full p-4 border-b-4 border-sti-blue hover:border-white">
+                                        class="flex items-center justify-between w-full p-4 border-b-4 border-sti-blue-700 hover:border-white">
                                         {{ $item['label'] }}
                                         <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -86,8 +86,8 @@
                                         </svg>
                                     </button>
                                     <div id="nav-dropdown-{{ $key }}"
-                                        class="relative z-10 hidden w-auto grid-cols-2 
-                                bg-sti-blue text-white">
+                                        class="relative z-10 hidden w-auto grid-cols-2
+                                bg-sti-blue-700 text-white">
                                         <ul class="flex flex-wrap py-4 px-8 max-w-2xl"
                                             aria-labelledby="nav-dropdown-button-{{ $key }}">
                                             @foreach ($item['sub'] as $sub)

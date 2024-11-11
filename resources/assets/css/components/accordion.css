@@ -8,8 +8,8 @@
     @apply border-b-0;
 }
 .accordion-group details:last-child summary {
-    @apply border-b;
+    @apply border-b border-gray-200;
 }
 .accordion-group details:last-child > div {
-    @apply border-b;
+    @apply border-b border-gray-200;
 }
