@@ -1,3 +1,12 @@
 <input id="{{ $id }}" name="{{ $name }}" type="checkbox" value="{{ $value }}"
     @checked($checked)
-    class="w-6 h-6 text-sti-blue-700 bg-gray-100 border-gray-300 rounded-sm focus:ring-sti-blue-700 focus:ring-2 hover:cursor-pointer" />
+    {{ $attributes->merge([
+        'class' => 'w-4 h-4
+                        text-sti-blue-700
+                        bg-gray-100
+                        border-gray-300 rounded-sm
+                        form-hover-ring
+                        hover:cursor-pointer
+                        transition ease-in-out duration-150',
+    ]) }}
+     />

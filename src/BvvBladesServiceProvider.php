@@ -87,7 +87,7 @@ class BvvBladesServiceProvider extends ServiceProvider
 
             // Publish assets
             $this->publishes([
-                __DIR__ . '/../templates/tailwind.config.js' => base_path('tailwind.config.js'),
+                __DIR__ . '/../tailwind.config.js' => base_path('tailwind.config.js'),
             ], 'tailwind');
         }
     }

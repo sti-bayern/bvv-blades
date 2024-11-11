@@ -8,8 +8,11 @@
     @apply border-b-0;
 }
 .accordion-group details:last-child summary {
-    @apply border-b;
+    @apply border-b border-gray-200;
 }
 .accordion-group details:last-child > div {
-    @apply border-b;
+    @apply border-b border-gray-200;
+}
+.form-hover-ring {
+    @apply hover:ring-4 hover:ring-offset-1 hover:ring-gray-300 focus:ring-4 focus:ring-offset-1 focus:ring-gray-300 focus:outline-none transition ease-in-out duration-150;
 }

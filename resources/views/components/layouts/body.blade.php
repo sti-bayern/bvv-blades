@@ -2,7 +2,7 @@
 
     <x-bvvblades::layouts.navigation />
 
-    <header class="bg-sti-blue-light">
+    <header class=" bg-sti-blue-50">
         <section class="max-w-5xl mx-auto py-2">
             <nav class="w-full rounded-md flex justify-start text-gray-800 space-x-4">
                 <span>Sie befinden sich hier: </span>

@@ -1,11 +1,11 @@
-<fieldset 
+<fieldset
     {{ $attributes->class([
-        'flex', 
+        'flex',
         'col-span-2' => $span == 2
     ]) }}>
     @if ($legend)
         <legend
-            class="rounded-t-sm block bg-gray-100 border-x border-t px-2 py-2 font-bold border-gray-200 w-full -py-6 ">
+            class="rounded-t-sm block bg-gray-200 border-x border-t px-2 py-2 font-bold border-gray-200 w-full -py-6 ">
             {{ $legend }}
         </legend>
     @endif
