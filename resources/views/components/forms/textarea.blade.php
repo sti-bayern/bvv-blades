@@ -7,4 +7,4 @@
                     block w-full min-h-32 p-2.5
                     transition ease-in-out duration-150',
     ]) }}
-    name="{{ $name }}" id="{{ $id }}" placeholder="{{ $placeholder }}">{{ trim($slot) }}</textarea>
+    name="{{ $name }}" id="{{ $id }}" placeholder="{{ $placeholder }}">{!! trim($slot) !!}</textarea>
