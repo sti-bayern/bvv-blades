@@ -1,10 +1,10 @@
 <?php
 
-namespace Sti\BvvBlades\View\Components;
+namespace Sti\BvvBlades\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class FormsCheckbox extends Component
+class Checkbox extends Component
 {
     public function __construct(
         public string $name,

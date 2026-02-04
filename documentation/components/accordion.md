@@ -6,12 +6,12 @@ Der Titel ist dabei standardmäßig eine h3-Überschrift, s. Attribute
 
         <!-- Usage Example -->
 
-        <x-bvvblades-accordion title="Dein Titel">
+        <x-bvvblades::accordion title="Dein Titel">
             Der Inhalt des fsdgdfg.
-        </x-bvvblades-accordion>
-        <x-bvvblades-accordion title="Dein Titel">
+        </x-bvvblades::accordion>
+        <x-bvvblades::accordion title="Dein Titel">
             Der Inhalt des fsdgdfg.
-        </x-bvvblades-accordion>
+        </x-bvvblades::accordion>
 
 ## Attribute
 

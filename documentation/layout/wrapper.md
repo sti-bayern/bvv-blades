@@ -3,9 +3,9 @@
 
 Damit das HTML-Gerüst aus den Paket übernommen wird, muss man in dem gewünschten Template einfach folgende Laravel-Componente einbauen:
 
-    <x-bvvblades-layout-base>
+    <x-bvvblades::layouts.base>
         hier kommt der Seiteninhalt hin
-    </x-bvvblades-layout-base>
+    </x-bvvblades::layouts.base>
 
 Das fügt das komplette HTML-Gerüst ein, inkl. Head, Body, Navigation usw.
 
@@ -31,7 +31,7 @@ Die Elemente der Brotkrumen werden durch ein Array festgelegt:
 
 ## Beispiel
 
-    <x-bvvblades-layout-base 
+    <x-bvvblades::layouts.base
         title="Dienststellen-Übersicht" 
         :breadcrumbs="[
             'links'  => [
@@ -40,7 +40,7 @@ Die Elemente der Brotkrumen werden durch ein Array festgelegt:
             'active' => 'Bearbeiten'
         ]">
         ...
-    </x-bvvblades-layout-base>
+    </x-bvvblades::layouts.base>
 
 
 [zur Übersicht](../../README.md)

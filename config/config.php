@@ -2,43 +2,30 @@
 
 return [
 
-    // Config-Eintrag, mit dem das Menü gebaut wird.
+    /*
+    |--------------------------------------------------------------------------
+    | Component Prefix
+    |--------------------------------------------------------------------------
+    |
+    | This value will be used as the prefix for all Blade components.
+    | For example, a prefix of 'bvv' will result in <x-bvv::input />.
+    |
+    */
+    'prefix' => 'bvvblades',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Navigation
+    |--------------------------------------------------------------------------
+    |
+    | Config-Eintrag, mit dem das Menü gebaut wird.
+    |
+    */
     'navigation' => [
-
-        /* ---------------------------
-            1.1 Menüeintrag, der zu einer bestimmten Laravel-Route verweist
-        ---------------------- */
+        // Example entries:
         // [
-        //     'label' => 'Personen12',
-        //     'route' => 'people.index'
+        //     'label' => 'Home',
+        //     'route' => 'home'
         // ],
-
-        /* ---------------------------
-            1.2 Menüeintrag, der zu einer bestimmten URL verweist
-        ---------------------- */
-        // [
-        //     'label' => 'Google',
-        //     'link' => 'https://www.google.de'
-        // ],
-
-        /* ---------------------------
-            2 Dropdown, mit Unterpunkten
-            der Sub-Eintrag ist genauso aufgebaut, wie bei 1.1 und 1.2
-            Der Dropdown-Eintrag ist nicht verlinkt und benötigt auch keinen Route- oder Link-Eintrag
-        ---------------------- */
-        // [
-        //     'label' => 'Personen-DD',
-        //     'sub' => [
-        //         [
-        //             'label' => 'Übersicht',
-        //             'route' => 'people.index'
-        //         ],
-        //         [
-        //             'label' => 'Google',
-        //             'link' => 'https://www.google.de'
-        //         ],
-        //     ]
-        // ]
-
     ]
 ];

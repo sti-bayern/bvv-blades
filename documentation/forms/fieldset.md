@@ -1,9 +1,9 @@
 # Fieldset
 
-    <x-bvvblades-forms-fieldset
+    <x-bvvblades::forms.fieldset
         type='{type}' span="{span}" legend="<legend>">
         ...
-    </x-bvvblades-forms-fieldset>
+    </x-bvvblades::forms.fieldset>
 
 ## Attribute
 
@@ -15,12 +15,12 @@
 
 ## Beispiel
 
-    <x-bvvblades-forms-fieldset
+    <x-bvvblades::forms.fieldset
         type='blank' 
         span="2" 
         legend="Fieldset-Titel">
         ...
-    </x-bvvblades-forms-fieldset>
+    </x-bvvblades::forms.fieldset>
 
 
 [zur Übersicht](../../README.md)

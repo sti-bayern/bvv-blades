@@ -1,10 +1,10 @@
 <?php
 
-namespace Sti\BvvBlades\View\Components;
+namespace Sti\BvvBlades\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class FormsRadio extends Component
+class Select extends Component
 {
 
     public function __construct(
@@ -18,6 +18,6 @@ class FormsRadio extends Component
 
     public function render()
     {
-        return view('bvvblades::components.forms.radio');
+        return view('bvvblades::components.forms.select');
     }
 }

@@ -22,6 +22,6 @@ class Accordion extends Component
 
     public function render()
     {
-        return view('bvvblades::components.components.accordion');
+        return view('bvvblades::components.accordion');
     }
 }
