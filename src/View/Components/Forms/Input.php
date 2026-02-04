@@ -1,10 +1,10 @@
 <?php
 
-namespace Sti\BvvBlades\View\Components;
+namespace Sti\BvvBlades\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class FormsInput extends Component
+class Input extends Component
 {
     private array $types = [
         'text', 'date', 'hidden', 'email', 'number', 'password', 'url', 'tel'

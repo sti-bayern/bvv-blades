@@ -1,10 +1,10 @@
 <?php
 
-namespace Sti\BvvBlades\View\Components;
+namespace Sti\BvvBlades\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class FormsElements extends Component
+class Elements extends Component
 {
     public array $elements = [];
 

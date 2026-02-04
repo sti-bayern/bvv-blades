@@ -2,7 +2,7 @@
 
 ## Einzel-Element
     
-    <x-bvvblades-forms-input id="<id>" name="<name>" options="<options>" value="<value>" />
+    <x-bvvblades::forms.input id="<id>" name="<name>" options="<options>" value="<value>" />
 
 ### Attribute
 
@@ -23,7 +23,7 @@
 
 ### Beispiel
     
-    <x-bvvblades-forms-select 
+    <x-bvvblades::forms.select
         name="country" 
         id="country" 
         :options="[
@@ -37,7 +37,7 @@
 
 Es können auch Select-Felder in Kombination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
     
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="select"
         id="<id>" 
         name="<name>" 
@@ -47,7 +47,7 @@ Es können auch Select-Felder in Kombination mit Beschriftung und ggf. Helfertex
     >
         <x-slot:helper>Helfer-Text</x-slot>
         <x-slot:error>Fehler-Text</x-slot>
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 ### Attribute
 
@@ -69,7 +69,7 @@ Es können auch Select-Felder in Kombination mit Beschriftung und ggf. Helfertex
 
 ### Beispiel
     
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="select"
         name="country" 
         id="country" 
@@ -86,7 +86,7 @@ Es können auch Select-Felder in Kombination mit Beschriftung und ggf. Helfertex
         @error('country')
             <x-slot:error>{{ $message }}</x-slot>
         @enderror
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 
 [zur Übersicht](../../README.md)

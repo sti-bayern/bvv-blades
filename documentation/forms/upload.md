@@ -1,8 +1,8 @@
-# Checkbox
+# Upload
 
 ## Einzel-Element
     
-    <x-bvvblades-forms-upload name="<name>" id="<id>" />
+    <x-bvvblades::forms.upload name="<name>" id="<id>" />
 
 ### Attribute
 
@@ -13,7 +13,7 @@
 
 ### Beispiel
 
-    <x-bvvblades-forms-input 
+    <x-bvvblades::forms.upload
         name="file_upload" 
         id="file_upload" />
 
@@ -21,7 +21,7 @@
 
 Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
     
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="upload"
         id="<id>" 
         name="<name>" 
@@ -29,7 +29,7 @@ Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertext
     >
         <x-slot:helper>Helfer-Text</x-slot>
         <x-slot:error>Fehler-Text</x-slot>
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 ### Attribute
 
@@ -37,7 +37,7 @@ Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertext
 | ------- | ------ | -------------- | -------- | --------------------------------------------------------- |
 | name    | string |                |          | id-Attribute                                              |
 | label   | string |                |          | Inhalt des Label-Elements                                 |
-| element | string | input          |          | Legt fest, welche Form-Element-Gruppe erzeugt werden soll |
+| element | string | upload         |          | Legt fest, welche Form-Element-Gruppe erzeugt werden soll |
 | id      | string |                | optional | id-Attribute, falls leer wird der name verwendet          |
 
 ### Slots
@@ -49,7 +49,7 @@ Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertext
 
 ### Beispiel
 
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="upload"
         name="avatar" 
         label="Profil-Bild"
@@ -60,7 +60,7 @@ Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertext
         @error('vorname')
             <x-slot:error>{{ $message }}</x-slot>
         @enderror
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 
 [zur Übersicht](../../README.md)

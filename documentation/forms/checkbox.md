@@ -2,7 +2,7 @@
 
 ## Einzel-Element
     
-    <x-bvvblades-forms-checkbox name="<name>" id="<id>" />
+    <x-bvvblades::forms.checkbox name="<name>" id="<id>" />
 
 ### Attribute
 
@@ -15,14 +15,14 @@
 
 ### Beispiel
 
-    <x-bvvblades-forms-checkbox 
-        name="is_activ"  />
+    <x-bvvblades::forms.checkbox
+        name="is_active"  />
 
 ## Checkbox-Gruppe
 
 Es können auch Checkbox-Felder in Kombination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
     
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="checkbox"
         id="<id>" 
         name="<name>" 
@@ -30,7 +30,7 @@ Es können auch Checkbox-Felder in Kombination mit Beschriftung und ggf. Helfert
     >
         <x-slot:helper>Helfer-Text</x-slot>
         <x-slot:error>Fehler-Text</x-slot>
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 ### Attribute
 
@@ -51,18 +51,19 @@ Es können auch Checkbox-Felder in Kombination mit Beschriftung und ggf. Helfert
 
 ### Beispiel
 
-    <x-bvvblades-forms-group 
-        name="vorname" 
-        label="Vorname der Person"
-        value="{{ $person->vorname }}"
+    <x-bvvblades::forms.group
+        element="checkbox"
+        name="newsletter"
+        label="Newsletter abonnieren"
+        :checked="true"
     >
         <x-slot:helper>
-            ggf. auch weitere Vornamen angeben
+            Sie können sich jederzeit wieder abmelden.
         </x-slot>
-        @error('vorname')
+        @error('newsletter')
             <x-slot:error>{{ $message }}</x-slot>
         @enderror
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 
 [zur Übersicht](../../README.md)

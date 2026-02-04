@@ -4,38 +4,49 @@
 
     composer require sti-bayern/bvv-blades
 
-## Anpassungen
+## Assets & Styling
 
-Damit die BVV-Blades korrekt angezeigt werden müssen, folgende Dateien angepasst werden:
+Das Paket verwendet Tailwind CSS. Um die Stile des Pakets in Ihre Anwendung zu integrieren, folgen Sie diesen Schritten:
 
-- resources/css/app.css
-- resources/js/app.js
-- tailwind.config.js
+### 1. Tailwind Preset veröffentlichen
 
-Es gibt zwei Möglichkeiten, diese Anpassungen durchzuführen:
+Veröffentlichen Sie das Tailwind-Preset:
 
-### manuelle Anpassung
+    php artisan vendor:publish --provider="Sti\BvvBlades\BvvBladesServiceProvider" --tag=tailwind
 
-**resources/css/app.css** folgende Zeile ergänzen
+Dies erstellt eine `tailwind-preset.js` in Ihrem Projekt-Stammverzeichnis.
 
-    @import '../../vendor/sti-bayern/bvv-blades/dist/assets/css/app.css';
+### 2. Tailwind Konfiguration anpassen
 
-**resources/css/app.css** folgende Zeilen ergänzen
+Binden Sie das Preset in Ihrer `tailwind.config.js` ein:
 
-    import '../css/app.css'
-    import '../../vendor/sti-bayern/bvv-blades/dist/assets/js/app.js';
+```javascript
+import preset from './tailwind-preset';
 
-**tailwind.config.js** diese Datei entsprechend der [Vorlage](../templates/tailwind.config.js) anpassen.
+export default {
+    presets: [
+        preset
+    ],
+    content: [
+        // Ihre anderen Content-Pfade...
+        './vendor/sti-bayern/bvv-blades/resources/views/**/*.blade.php',
+    ],
+    // ...
+}
+```
 
-### php artisan publish
+### 3. CSS/JS Einbindung
 
-Mit folgendem Befehl werden die css- und js-Dateien überschrieben und angepasst:
+Da das Paket keine festen `@vite` Direktiven mehr in den Layouts vorschreibt, müssen Sie sicherstellen, dass Ihre eigenen Assets im Head-Bereich geladen werden. Sie können dazu den `head`-Slot der Layout-Komponente nutzen:
 
-    php artisan vendor:publish --provider="Sti\BvvBlades\BvvBladesServiceProvider" --tag=assets --force
+```html
+<x-bvvblades::layouts.base title="Meine Seite">
+    <x-slot:head>
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    </x-slot:head>
 
-Mit folgendem Befehl die Tailwind-Config-Datei überschrieben und angepasst:
-
-    php artisan vendor:publish --provider="Sti\BvvBlades\BvvBladesServiceProvider" --tag=tailwind --force
-
+    <!-- Content -->
+</x-bvvblades::layouts.base>
+```
 
 [zur Übersicht](../README.md)

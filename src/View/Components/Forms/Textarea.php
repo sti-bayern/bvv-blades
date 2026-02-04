@@ -1,10 +1,10 @@
 <?php
 
-namespace Sti\BvvBlades\View\Components;
+namespace Sti\BvvBlades\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class FormsTextarea extends Component
+class Textarea extends Component
 {
     public function __construct(
         public string $name,

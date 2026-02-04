@@ -15,6 +15,6 @@ class AccordionItem extends Component
 
     public function render()
     {
-        return view('bvvblades::components.components.accordion-item');
+        return view('bvvblades::components.accordion-item');
     }
 }

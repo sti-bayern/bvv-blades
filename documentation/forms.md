@@ -2,11 +2,11 @@
 
 Standardmäßig wird das Formular als zweispaltiges Grid ausgegeben. Dieses Verhalten kann man über die Attribute ändern.
 
-    <x-bvvblades-forms-form 
+    <x-bvvblades::forms.form
         method='{method}' action="{action}" 
         [no-grid]>
         ...
-    </x-bvvblades-forms-form>
+    </x-bvvblades::forms.form>
 
 ## Attribute
 
@@ -18,12 +18,12 @@ Standardmäßig wird das Formular als zweispaltiges Grid ausgegeben. Dieses Verh
 
 ## Beispiel
 
-    <x-bvvblades-forms-form 
+    <x-bvvblades::forms.form
         method='patch' 
         :action="route('organisations.update', ['organisation' => $item->id])"
         no-grid>
         ...
-    </x-bvvblades-forms-form>
+    </x-bvvblades::forms.form>
 
 
 [zur Übersicht](../README.md)  

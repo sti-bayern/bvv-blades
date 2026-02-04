@@ -1,10 +1,10 @@
 <?php
 
-namespace Sti\BvvBlades\View\Components;
+namespace Sti\BvvBlades\View\Components\Layouts;
 
 use Illuminate\View\Component;
 
-class LayoutContainer extends Component
+class Container extends Component
 {
 
     public function __construct() 

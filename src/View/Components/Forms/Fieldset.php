@@ -1,11 +1,10 @@
 <?php
 
-namespace Sti\BvvBlades\View\Components;
+namespace Sti\BvvBlades\View\Components\Forms;
 
 use Illuminate\View\Component;
-use Ramsey\Uuid\Type\Integer;
 
-class FormsFieldset extends Component
+class Fieldset extends Component
 {
 
     public function __construct(

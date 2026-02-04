@@ -4,7 +4,7 @@ namespace Sti\BvvBlades\View\Components;
 
 use Illuminate\View\Component;
 
-class ComponentsBanner extends Component
+class Banner extends Component
 {
     protected array $sizes = ['s', 'm', 'l'];
 
@@ -19,6 +19,6 @@ class ComponentsBanner extends Component
 
     public function render()
     {
-        return view('bvvblades::components.components.banner');
+        return view('bvvblades::components.banner');
     }
 }

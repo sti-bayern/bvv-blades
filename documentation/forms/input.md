@@ -2,7 +2,7 @@
 
 ## Einzel-Element
     
-    <x-bvvblades-forms-input name="<name>" id="<id>" />
+    <x-bvvblades::forms.input name="<name>" id="<id>" />
 
 ### Attribute
 
@@ -15,7 +15,7 @@
 
 ### Beispiel
 
-    <x-bvvblades-forms-input 
+    <x-bvvblades::forms.input
         name="streng_geheim" 
         id="streng_geheim" 
         type="password" 
@@ -25,7 +25,7 @@
 
 Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
     
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="input"
         id="<id>" 
         name="<name>" 
@@ -35,7 +35,7 @@ Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertext
     >
         <x-slot:helper>Helfer-Text</x-slot>
         <x-slot:error>Fehler-Text</x-slot>
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 ### Attribute
 
@@ -57,7 +57,7 @@ Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertext
 
 ### Beispiel
 
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="input"
         id="vorname" 
         name="vorname" 
@@ -70,7 +70,7 @@ Es können auch Input-Felder in Kombination mit Beschriftung und ggf. Helfertext
         @error('vorname')
             <x-slot:error>{{ $message }}</x-slot>
         @enderror
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 
 [zur Übersicht](../../README.md)

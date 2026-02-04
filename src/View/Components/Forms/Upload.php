@@ -1,10 +1,10 @@
 <?php
 
-namespace Sti\BvvBlades\View\Components;
+namespace Sti\BvvBlades\View\Components\Forms;
 
 use Illuminate\View\Component;
 
-class FormsUpload extends Component
+class Upload extends Component
 {
     public function __construct(
         public string $name,

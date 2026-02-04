@@ -2,7 +2,7 @@
 
 ## Einzel-Element
     
-    <x-bvvblades-forms-textarea name="<name>" id="<id>">Text</x-bvvblades-forms-textarea>
+    <x-bvvblades::forms.textarea name="<name>" id="<id>">Text</x-bvvblades::forms.textarea>
 
 ### Attribute
 
@@ -14,17 +14,17 @@
 
 ### Beispiel
 
-    <x-bvvblades-forms-textarea 
+    <x-bvvblades::forms.textarea
         name="beschreibung" 
         placeholder="Bitte ergänzen sie eine kurze Beschreibung">
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-    </x-bvvblades-forms-textarea>
+    </x-bvvblades::forms.textarea>
 
 ## Input-Gruppe
 
 Es können auch Textarea-Felder in Kombination mit Beschriftung und ggf. Helfertexte oder Fehlermeldungen erzeugt werden
     
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="textarea"
         id="<id>" 
         name="<name>" 
@@ -35,7 +35,7 @@ Es können auch Textarea-Felder in Kombination mit Beschriftung und ggf. Helfert
         <x-slot:helper>Helfer-Text</x-slot>
         <x-slot:error>Fehler-Text</x-slot>
         Text
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 ### Attribute
 
@@ -57,7 +57,7 @@ Es können auch Textarea-Felder in Kombination mit Beschriftung und ggf. Helfert
 
 ### Beispiel
 
-    <x-bvvblades-forms-group 
+    <x-bvvblades::forms.group
         element="textarea"
         id="beschreibung" 
         label="Beschreibung"
@@ -69,7 +69,7 @@ Es können auch Textarea-Felder in Kombination mit Beschriftung und ggf. Helfert
         @error('vorname')
             <x-slot:error>{{ $message }}</x-slot>
         @enderror
-    </x-bvvblades-forms-group>
+    </x-bvvblades::forms.group>
 
 
 [zur Übersicht](../../README.md)
