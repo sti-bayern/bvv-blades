@@ -22,6 +22,7 @@ use Sti\BvvBlades\View\Components\FormsFieldset;
 use Sti\BvvBlades\View\Components\FormsTextarea;
 use Sti\BvvBlades\View\Components\LayoutContainer;
 use Sti\BvvBlades\View\Components\ComponentsBanner;
+use Sti\BvvBlades\View\Components\Icon;
 
 class BvvBladesServiceProvider extends ServiceProvider
 {
@@ -59,6 +60,8 @@ class BvvBladesServiceProvider extends ServiceProvider
             Alert::class,
             Accordion::class,
             AccordionItem::class,
+
+            Icon::class,
         ]);
 
         $this->loadViewsFrom(__DIR__ . '/../resources/views', 'bvvblades');
